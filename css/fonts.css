@@ -1,0 +1,22 @@
+@font-face {
+font-family: "FaberSansPro-Normal";
+font-style: normal;
+font-weight: normal;
+src:  url("../fonts/FaberSansPro-Normal.woff") format("woff"); } 
+
+@font-face {
+font-family: "Directo-Bold";
+font-style: normal;
+font-weight: normal;
+src:  url("../fonts/Directo-Bold.woff") format("woff"); } 
+
+
+/* 
+
+@font-face {
+font-family: "";
+font-style: normal;
+font-weight: normal;
+src:  url("../fonts/.woff") format("woff"); } 
+
+*/
