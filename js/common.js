@@ -31,7 +31,7 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		if(header.hasClass('fixed')) header.removeClass('fixed');
 		if(header.hasClass('out')) header.removeClass('out');
-		if(document.documentElement.clientWidth > 771){
+		if(document.documentElement.clientWidth > 768){
 			header = $('#header');
 
 		}
