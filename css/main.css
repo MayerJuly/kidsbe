@@ -505,7 +505,7 @@ input, textarea{
 		background-color:#F5F4FF;
 	}
 
-	@media(min-width:771px){
+	@media(min-width:769px){
 		#header.fixed .s1_ul2{
 			display: flex;
 			justify-content: center;
@@ -3893,7 +3893,7 @@ audio::-webkit-media-controls-enclosure {
 	text-align: center;
 	color: #2D2D2D;
 	position: relative;
-	margin-top: 10px;
+	margin-top: 20px;
 	font-family: "Directo-Bold";
 }
 

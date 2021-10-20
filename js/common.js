@@ -12,7 +12,6 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		let scrolled = $(window).scrollTop();
 		if(scrolled>200) {
-			console.log(document.documentElement.clientWidth)
 			if(document.documentElement.clientWidth <= 751) mobileMenu.slideUp();
 			header.addClass('fixed');
 
@@ -160,11 +159,7 @@ function SendMail(form, formNum){
 			url: "../mail.php", //Change
 			data: msgOut
 		}).done(function() {
-			$('.modal_form').fadeOut();
-			$('.modal_form2').fadeIn();
-			setTimeout(function() {
-				document.location.replace("index.html");
-			}, 2000);
+				document.location.replace("success.html");
 		});
 		return false;
 
