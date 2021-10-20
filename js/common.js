@@ -63,7 +63,6 @@ $(".mod_close").click(function(){
 
 
 	$(document).click(function(e){
-		console.log(e.target);
 		if(!e.target.closest('.s1_ul2') && !e.target.classList.contains('mnu_small') && !e.target.classList.contains('burger_item') && document.documentElement.clientWidth <769){
 			mobileMenu.slideUp();
 		}
@@ -153,10 +152,8 @@ $(".s11_btn1").click(function(){
 
 
 function SendMail(form, formNum){
-	console.log(form)
 		let msg = form.serialize();
 		let msgOut= msg + "&from=" +from + "&formNum=" +formNum;
-		console.log(msgOut)
 
 		$.ajax({
 			type: "POST",
