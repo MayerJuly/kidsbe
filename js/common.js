@@ -4,7 +4,7 @@ $(document).ready(function() {
  	let header,
 	 scrollPrev = 0;
 
-	if(document.documentElement.clientWidth > 771) header = $('#header');
+	if(document.documentElement.clientWidth > 751) header = $('#header');
 	else{
 		header = $('.s1');
 	}
@@ -12,7 +12,8 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		let scrolled = $(window).scrollTop();
 		if(scrolled>200) {
-			if(document.documentElement.clientWidth < 771) mobileMenu.slideUp();
+			console.log(document.documentElement.clientWidth)
+			if(document.documentElement.clientWidth <= 751) mobileMenu.slideUp();
 			header.addClass('fixed');
 
 		}
@@ -31,9 +32,8 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		if(header.hasClass('fixed')) header.removeClass('fixed');
 		if(header.hasClass('out')) header.removeClass('out');
-		if(document.documentElement.clientWidth > 768){
+		if(document.documentElement.clientWidth > 751){
 			header = $('#header');
-
 		}
 		else{
 			header = $('.s1');
